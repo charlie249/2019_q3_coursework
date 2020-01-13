@@ -16,5 +16,9 @@ public class Solution {
     public static void main(String[] args) {
         System.out.println("Hello world");
         System.out.println("My name is Charlie");
+        System.out.println("_______");
+        System.out.println("| o o |");
+        System.out.println("| --- |");
+        System.out.println("-------");
     }
 }
