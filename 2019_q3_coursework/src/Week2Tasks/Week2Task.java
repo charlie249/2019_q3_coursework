@@ -12,7 +12,6 @@ import java.util.Scanner;
 public class Week2Task {
     public static void main(String[] args) {
         int counter = 10;
-        int number = 13;
 
         while(counter > 0)
         {
