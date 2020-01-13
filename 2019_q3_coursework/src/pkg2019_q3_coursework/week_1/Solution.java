@@ -20,8 +20,8 @@ public class Solution {
         System.out.println("Hello world");
         System.out.println("My name is " + name + ". And i am " + age + " years old.");
         System.out.println("_______");
-        System.out.println("| o o |");
-        System.out.println("| --- |");
+        System.out.println("| o o | HELLO " + name +".");
+        System.out.println("| --- | HOW ARE YOU?");
         System.out.println("-------");
     }
 }
