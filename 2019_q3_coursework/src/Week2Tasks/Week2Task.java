@@ -12,10 +12,11 @@ import java.util.Scanner;
 public class Week2Task {
     public static void main(String[] args) {
         int counter = 10;
+        int number = 13;
 
         while(counter > 0)
         {
-            System.out.print(counter);
+            System.out.println(counter);
             counter--;
         }
         
@@ -41,12 +42,31 @@ public class Week2Task {
         
         else if(choice == 2)
         {
-            
-        }
-        
+          System.out.println("You have selected 2 - Display a multiplication table");
+          
+          System.out.println("Please enter the multpiplication table you want, for examepl 12, or 2 etc.");
+                
+          int multiple = Integer.parseInt(scanIn.nextLine());
+         
+          System.out.println("Displaying the " + multiple + " times table");
+          
+          for( int count = 1; count <= 12; count++ )
+            {
+                System.out.println( count + " times " + multiple + " = " + (multiple * count));
+         
+            }
+         
+        } 
         else if(choice == 3) 
         {
+            System.out.println("You have selected 3: Add two numbers together.");
+            System.out.println("Please enter the first number: ");
+            int numbOne = Integer.parseInt(scanIn.nextLine());
             
+            System.out.println("Please enter the second number: ");
+            int numbTwo = Integer.parseInt(scanIn.nextLine());
+            
+            System.out.println("Here is your total: " + (numbOne + numbTwo));
         }
         else
         {

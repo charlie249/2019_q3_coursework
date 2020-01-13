@@ -9,7 +9,7 @@ package pkg2019_q3_coursework.week_1;
  *
  * @author charlie
  */
-public class Solution {
+public class Week1Tasks {
     /**
      * @param args the command line arguments
      */
