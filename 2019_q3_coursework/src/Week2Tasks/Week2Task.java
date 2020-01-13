@@ -12,17 +12,21 @@ import java.util.Scanner;
 public class Week2Task {
     public static void main(String[] args) {
         int counter = 10;
-
+        int state = 1;
+         
         while(counter > 0)
         {
             System.out.println(counter);
             counter--;
         }
         
-        System.out.println("Please enter the letter that corresponds with your choice: ");
+        while(state == 1)
+        {
+        System.out.println("Please enter the number that corresponds with your choice: ");
         System.out.println("1: Calculate the area of a rectangle");
         System.out.println("2: Display a multiplication table");
         System.out.println("3: Add two numbers together");
+        System.out.println("4: Exit program");
         Scanner scanIn = new Scanner(System.in);
         int choice = Integer.parseInt(scanIn.nextLine());
         
@@ -67,11 +71,17 @@ public class Week2Task {
             
             System.out.println("Here is your total: " + (numbOne + numbTwo));
         }
+        else if(choice == 4)
+        {
+            state = 0;
+        }
         else
         {
             System.out.println("I'm sorry that was not one of the options");
         }
         
+ 
         scanIn.close();
+        }
     }
 }
