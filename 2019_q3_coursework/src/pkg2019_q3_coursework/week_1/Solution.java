@@ -10,12 +10,15 @@ package pkg2019_q3_coursework.week_1;
  * @author charlie
  */
 public class Solution {
-        /**
+    /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+      String name = "Charlie";
+        int age = 18;
+        
         System.out.println("Hello world");
-        System.out.println("My name is Charlie");
+        System.out.println("My name is " + name + ". And i am " + age + " years old.");
         System.out.println("_______");
         System.out.println("| o o |");
         System.out.println("| --- |");
