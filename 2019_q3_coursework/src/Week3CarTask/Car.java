@@ -82,10 +82,17 @@ public class Car {
     {
         fuelLevel = 100;
     }
+    
+    public Car(String makeIn, String colourIn)
+    {
+      make =  makeIn; 
+      colour = colourIn;
+      maxSpeed = 180; 
+    } 
     public static void main(String[] args)
 {
-    Car c1 = new Car();
-    Car c2 = new Car();
+    Car c1 = new Car("BMW", "Black");
+    Car c2 = new Car("Mazda", "red");
     
     c1.setMake("BMW");
     c1.setColour("Black");
@@ -117,8 +124,8 @@ public class Car {
     System.out.println("Maximum Speed: " + c2.getMaxSpeed());
     System.out.println("Fuel level: " + c2.getFuelLevel());
     
-}
     
+}
     
 }
 
