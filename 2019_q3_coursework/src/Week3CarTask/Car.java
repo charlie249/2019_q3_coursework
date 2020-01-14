@@ -67,7 +67,7 @@ public class Car {
         fuelLevel = fuelLevelIn;
     }
     
-    public void accelerate(int currentSpeed)
+    public void accelerate(int currentSpeedIn)
     {
         if(currentSpeed <= maxSpeed && fuelLevel !=0)
         {
@@ -84,7 +84,7 @@ public class Car {
         }
     }
     
-    public void brake(int currentSpeed)
+    public void brake(int currentSpeedIn)
     {
         if(currentSpeed != 0)
         {
@@ -92,7 +92,7 @@ public class Car {
         }
     }
     
-    public void refuel(int fuelLevel)
+    public void refuel(int fuelLevelIn)
     {
         if(fuelLevel < 101)
         {
