@@ -97,6 +97,12 @@ public class Car {
     c2.setCurrentSpeed(90);
     c2.setMaxSpeed(250);
     
+     c1.accelerate();
+     c2.brake();
+     c1.refuel();
+     c2.refuel();
+     
+    
     System.out.println("---- Car1 ----");
     System.out.println("Make: " + c1.getMake());
     System.out.println("Colour: " + c1.getColour());
@@ -110,7 +116,6 @@ public class Car {
     System.out.println("Current Speed: " + c2.getCurrentSpeed());
     System.out.println("Maximum Speed: " + c2.getMaxSpeed());
     System.out.println("Fuel level: " + c2.getFuelLevel());
-    
     
 }
     
