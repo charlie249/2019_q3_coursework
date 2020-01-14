@@ -121,10 +121,10 @@ public class Car {
     c2.setCurrentSpeed(90);
     c2.setMaxSpeed(250);
     
-     c1.accelerate();
-     c2.brake();
-     c1.refuel();
-     c2.refuel();
+     c1.accelerate(34);
+     c2.brake(-23);
+     c1.refuel(34);
+     c2.refuel(45);
      
     
     System.out.println("---- Car1 ----");
