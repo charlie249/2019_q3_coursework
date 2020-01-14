@@ -67,20 +67,37 @@ public class Car {
         fuelLevel = fuelLevelIn;
     }
     
-    public void accelerate()
+    public void accelerate(int currentSpeed)
     {
+        if(currentSpeed <= maxSpeed && fuelLevel !=0)
+        {
         currentSpeed++;
         fuelLevel--;
+        }
+        else
+        {
+            System.out.println("Your car is at maximum speed");
+        }
+        if(fuelLevel == 0)
+        {
+            currentSpeed = 0;
+        }
     }
     
-    public void brake()
+    public void brake(int currentSpeed)
     {
+        if(currentSpeed != 0)
+        {
         currentSpeed--;
+        }
     }
     
-    public void refuel()
+    public void refuel(int fuelLevel)
     {
+        if(fuelLevel < 101)
+        {
         fuelLevel = 100;
+        }
     }
     
     public Car(String makeIn, String colourIn)
