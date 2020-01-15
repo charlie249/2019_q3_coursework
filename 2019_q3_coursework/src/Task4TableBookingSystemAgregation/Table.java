@@ -88,13 +88,16 @@ public class Table {
    
    Staff s1 = new Staff("Barry", "Male");
    Staff s2 = new Staff("Jerry", "Female");
-   
-   t1.bookTable(b1);
+  
    t1.assignStaffMember(s1);
+   t1.bookTable(b1);
+   
    t2.assignStaffMember(s2);
    t2.bookTable(b2);
+   
    t3.assignStaffMember(s2);
    t3.bookTable(b3);
+   
    t4.assignStaffMember(s1);
    t4.bookTable(b4);
    
