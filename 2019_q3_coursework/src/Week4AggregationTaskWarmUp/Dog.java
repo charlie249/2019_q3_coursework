@@ -16,6 +16,7 @@ public class Dog {
          private int energy;
          private int hunger;
          private boolean isGood;
+         private Heart heart;
          
          public Dog(String nameIn, int weightIn)
          {
@@ -24,6 +25,7 @@ public class Dog {
              energy = 100;
              hunger = 50;
              isGood = true;
+             heart = new Heart(60);
          }
          
          public void chasePostman()
@@ -37,14 +39,22 @@ public class Dog {
          
          public void walk()
          {
+             if(heart.increaseBPM(5))
+             {
              weight--;
              energy--;
+             }
+             else
+             {
+                 System.out.println("The dog is under too much strain at the moment.");
+             }
          }
          
          public void sleep()
          {
              energy = 100;
              hunger--;
+             heart.rest();
          }
          
          public void eat()
