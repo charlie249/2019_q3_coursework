@@ -76,16 +76,27 @@ public class Table {
     
     public static void main(String[] args)
 {
-   Table t1 = new Table();
-   Table t2 = new Table();
+   Table t1 = new Table(6, 5, false);
+   Table t2 = new Table(14, 10, true);
+   Table t3 = new Table(1, 20, true);
+   Table t4 = new Table(3, 6, false);
    
-   Booking b1 = new Booking(); 
-   Booking b2 = new Booking();
-   Booking b3 = new Booking();
-   Booking b4 = new Booking();
+   Booking b1 = new Booking("Halsey", 5, true); 
+   Booking b2 = new Booking("Limington", 9, false);
+   Booking b3 = new Booking("Stephans", 14, false);
+   Booking b4 = new Booking("De Costas", 12, true);
    
-   Staff s1 = new Staff();
-   Staff s2 = new Staff();
+   Staff s1 = new Staff("Barry", "Male");
+   Staff s2 = new Staff("Jerry", "Female");
+   
+   t1.bookTable(b1);
+   t1.assignStaffMember(s1);
+   t2.assignStaffMember(s2);
+   t2.bookTable(b2);
+   t3.assignStaffMember(s2);
+   t3.bookTable(b3);
+   t4.assignStaffMember(s1);
+   t4.bookTable(b4);
    
 
 }
