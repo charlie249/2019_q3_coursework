@@ -14,7 +14,7 @@ public class Staff {
     String staffName;
     String gender;
     boolean experienced;
-    
+
     public String getStaffName()
     {
         return staffName;

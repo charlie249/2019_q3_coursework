@@ -14,7 +14,7 @@ public class Booking {
     String name;
     int numbGuests;
     boolean dineOut;
-    
+
     public String getName()
     {
         return name;
@@ -30,10 +30,11 @@ public class Booking {
         return dineOut;
     }
     
-    public Booking(String nameIn, int numbGuestsIn)
+    public Booking(String nameIn, int numbGuestsIn, boolean dineOutIn)
     {
         name = nameIn;
         numbGuests = numbGuestsIn;
+        dineOut = dineOutIn;
     }
     
 }
