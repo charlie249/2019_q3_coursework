@@ -15,6 +15,8 @@ public class Passenger {
     boolean student;
     double farePaid;
     
+    public Passenger[] passengers = new Passenger[15];
+
     public String getName()
     {
         return name;
@@ -54,6 +56,17 @@ public class Passenger {
         student = studentIn;
     }
     
+    public class newPassenger
+    {
+        newPassenger(String name, int age, boolean student, double farePaid)
+        {
+          
+        }
+    }
+    public Passenger addPassenger()
+    {
+        return addPassenger();
+    }
     public void print()
     {
         System.out.println("Name " + getName());
